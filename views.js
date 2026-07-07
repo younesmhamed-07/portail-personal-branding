@@ -64,8 +64,8 @@ select.status{width:100%;background:var(--bg);color:var(--text);border:1px solid
 .suivi-item .d{font-size:12px;color:var(--muted)}
 .suivi-item .a{font-size:12px;color:var(--accent);margin-left:8px}
 .empty{color:var(--muted);font-size:14px;padding:14px 0}
-.wa{position:fixed;right:22px;bottom:22px;background:#25D366;color:#fff;border-radius:999px;
-  padding:14px 18px;text-decoration:none;font-weight:600;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:30;font-size:14px}
+.wa{position:fixed;right:22px;bottom:22px;background:var(--accent);color:var(--ink);border-radius:999px;
+  padding:14px 18px;text-decoration:none;font-weight:700;box-shadow:0 6px 20px rgba(0,0,0,.4);z-index:30;font-size:14px}
 /* login */
 .login-wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px}
 .login-card{width:100%;max-width:380px;background:var(--surface);border:1px solid var(--border);
