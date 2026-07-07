@@ -9,12 +9,12 @@ function esc(s) {
 const STYLES = `
 :root{
   --bg:#131313; --surface:#1c1c1c; --surface-2:#242424; --border:#2e2e2e;
-  --text:#f2f0ec; --muted:#9a968f; --accent:#e8613c; --accent-soft:#e8613c22;
-  --green:#4caf50; --radius:14px;
+  --text:#ffffff; --muted:#9a968f; --accent:#f3e5ab; --accent-soft:#f3e5ab1f;
+  --ink:#131313; --green:#4caf50; --radius:14px;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--text);
-  font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+  font-family:'Montserrat',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
   line-height:1.5;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 .container{max-width:1040px;margin:0 auto;padding:24px 20px 96px}
@@ -56,8 +56,8 @@ select.status{width:100%;background:var(--bg);color:var(--text);border:1px solid
 .module .tt{font-weight:600;font-size:15px}
 .module .m{font-size:12px;color:var(--muted)}
 .module a.btn{margin-top:auto}
-.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;text-align:center;
-  padding:9px 14px;border-radius:9px;font-size:13px;font-weight:600;border:none;cursor:pointer}
+.btn{display:inline-block;background:var(--accent);color:var(--ink);text-decoration:none;text-align:center;
+  padding:9px 14px;border-radius:9px;font-size:13px;font-weight:700;border:none;cursor:pointer}
 .btn.ghost{background:transparent;border:1px solid var(--border);color:var(--text)}
 .livrable .st{font-size:12px;color:var(--muted);margin-top:4px}
 .suivi-item{border-left:2px solid var(--accent);padding:4px 0 4px 16px;margin-bottom:18px}
@@ -90,7 +90,7 @@ function layout(title, body, opts = {}) {
 <meta name="robots" content="noindex">
 <title>${esc(title)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 <style>${STYLES}</style></head><body>${body}
 ${opts.script || ''}</body></html>`;
 }
