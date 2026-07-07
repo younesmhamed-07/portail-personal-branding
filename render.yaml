@@ -1,0 +1,16 @@
+# Configuration de déploiement pour Render.com (hébergement gratuit).
+# Il suffit de pousser ce dossier sur un dépôt GitHub, puis "New > Blueprint" sur Render.
+services:
+  - type: web
+    name: portail-personal-branding
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NOTION_TOKEN
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true

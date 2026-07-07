@@ -1,0 +1,13 @@
+{
+  "name": "portail-personal-branding",
+  "version": "1.0.0",
+  "description": "Espace client d'accompagnement Personal Branding — Younès M'hamed. Backend Notion, zéro dépendance.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
